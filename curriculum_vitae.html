@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <style>
+        body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .grid-container {
+        display: grid;
+            grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: 200px 600xp;/*2fr 4fr;*/
+            grid-gap: 0px;
+            grid-template-areas: 
+            "foto titulo"
+            "datos review"
+        }
+        .grid-item1 {
+         background: rgb(94, 94, 94);  
+         display: flex;
+         text-align: center ;
+         justify-content: center;
+         align-items: center;      
+         border: black ;
+         grid-area: foto;
+        }
+        .grid-item2 {
+        background: rgb(94, 94, 94);  
+        text-align: center ;
+        padding: 0px;   
+        align-items: center;  
+         grid-area: titulo;
+        }
+        .grid-item3 {
+         background:rgb(194, 194, 194);  
+         text-align: center ; 
+         grid-area: datos;
+        }
+        .grid-item4 {
+         background:white;  
+         text-align: center ; 
+         border: black;
+         grid-area: review;
+        }
+        .circle{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        .circle img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        h2{
+            font-weight: lighter;
+            font-size: 45px;
+        }
+        h1{
+            font-size: 75px;
+            margin-bottom: 0px;
+        }
+        .box{
+            padding: 30px;
+            text-align: left;
+            height: auto;
+        }
+        .box h2 {
+            font-size: 45px;
+            font-weight: bold;
+            border-bottom: 2px solid black; 
+        }
+        p{
+            font-size: x-large;
+        } 
+        li {
+            font-size: x-large;
+        }
+        h3{
+            font-size: xx-large;
+        }
+        h4{
+            font-size: x-large;
+        }
+</style>
+</head>
+<body>
+    <div class="grid-container">
+         <div class="grid-item1">
+            <div class="circle"><img src="photo.jpg" alt="photo" width=100% height=auto></div>
+        </div>
+         <div class="grid-item2">
+            <h1 >Jose Martinez</h1>
+            <h2 >PUESTO OCUPADO/BUSCADO</h2>
+         </div>
+         <div class="grid-item3">
+            <div class="box">
+                <h2>CONTACTO</h2>
+                <p>999 999 999</p>
+                <p>jose.martinez@gnail.com</p>
+                <p>Mexico DF</p>
+                <p>linkedin.com/jose-martinez</p>
+            </div>
+            <div class="box">
+                <h2>IDIOMAS</h2>
+                <P>Español: Nativo</P>
+                <p>Ingles: Bilingue(TOEIC 950)</p>
+                <P>Frances: Intermedio(B2)</P>
+            </div>
+            <div class="box">
+                <h2>HABILIDADES</h2>
+                <ul>
+                    <li>Inteligencia emocional</li>
+                    <li>Espíritu crítico</li>
+                    <li>Trabajo en equipo</li>
+                    <li>Capacidad analítica</li>
+                    <li>Habilidades físicas</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>HABILIDADES</h2>
+                <ul>
+                    <li>Acondicionamiento físico
+                    </li>
+                    <li>Creación videos deportivos</li>
+                    <li>Pack office</li>
+                    <li>Tenis</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>OTROS INTERESES</h2>
+                <ul>
+                    <li>Creador de yincanas</li>
+                    <li>Paseos ecológicos grupales</li>
+                    <li>Lectura grupal en inglés</li>
+                </ul>
+            </div>
+         </div>
+         <div class="grid-item4">
+            <div class="box">
+                <h2>PERFIL</h2>
+                <p>Trabajador Social con 4 años de experiencia en proyectos colectivos Mi objetivo es lograr que los jóvenes obtengan acceso a la educación superior mediante logros deportivos.</p>            
+            </div>
+            <div class="box">
+                <h2>EXPERIENCIA LABORAL</h2>
+                <h3>Trabajador Social</h3>
+                <h4>México DF, 2022 - Actualmente</h4>
+                <ul>
+                    <li>Coordinador y mediador entre los equipos de ayuda psicológica a jovenes y niños en exclusión social.</li>
+                    <li>Velar por la salud mental del equipo y de miembros involucrados en proyectos.</li>
+                    <li>Mepeo de necesidades estrategicas y lógicas para las diferentes áreas • Monitor de ejercicios físicos para adolescentes.</li>
+                    <li>Programar diferentes actividades extracurriculares en los involucrados.</li>
+                </ul>
+                <h3>Trabajador Social</h3>
+                <h4>México DF, 2020-2022</h4>
+                <ul>
+                    <li>Funciones para seguimientos de casos para jóvenes con problemas de adicciones</li>
+                    <li> Capacitaciones e integración vinculadas a medidas preventivas</li>
+                    <li>Recopilación de evidencias para auditorías y programas sociales.</li>
+                </ul>
+                <h3>Trabajodor Social (Prácticas)</h3>
+                <h4>Zaragoza, España | 2019-2020</h4>
+                <ul>
+                    <li>Profesor de lengua española e inglesa para jovenes migrantes.</li>
+                    <li>Monitor de actividades ecológicas con adolescentes.</li>
+                    <li>Coordinador de áreas deportivas</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>FORMACION</h2>
+                <h3>Grado de Trabajo Social</h3>
+                <p>ESMA, Madrid | 2012-2015</p>
+                <h3>Licenciatura Profesional</h3>
+                <p>Universidad de la Frontera, México DF | 2011-2012</p>
+            </div>
+         </div>
+</body>
+</html>
